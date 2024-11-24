@@ -15,7 +15,7 @@ jf @PNIR
 if and
     1@ == 0
     $onmission == 0 // Making sure they don't spawn in the Rub Out missions
-    010A:   player $PLAYER_CHAR money > 74999 // Decreasing the chance they spawn before the Rub Out mission (Player will most likely not have 75k by then, but will surely have after).
+    010A: player $PLAYER_CHAR money > 74999 // Decreasing the chance they spawn before the Rub Out mission (Player will most likely not have 75k by then, but will surely have after).
 jf @NONAME_1
 jump @NONAME_67
 
