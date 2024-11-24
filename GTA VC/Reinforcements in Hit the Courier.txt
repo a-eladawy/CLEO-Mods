@@ -4,8 +4,9 @@ nop
 1@ = 0
 :Noname_2
 wait 0
-if 
+if and
   00F5:   player $PLAYER_CHAR 0 -696.434 -1481.84 11.2577 radius 100.0 100.0 10.0
+  010A:   player $PLAYER_CHAR money > 26999
  jf @PNIR
 if and
     $onmission == 1 
