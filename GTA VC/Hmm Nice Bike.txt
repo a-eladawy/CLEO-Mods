@@ -9,7 +9,7 @@ if and
   not is_player_sitting_in_any_car $player_char
 05F0: 0@ = random_vehicle_near_point 0.0 0.0 0.0 in_radius 3000.0 find_next 0 pass_wrecked 1
 jf @Noname_1
-goto @
+goto @Noname_2
 
 :Noname_2
 if or
@@ -23,14 +23,5 @@ load_mission_audio 'LAW1_7' as 1
 
 :Noname_3
 play_mission_audio 1
-if 
-  not has_mission_audio_finished 1
-goto_if_false @Noname_4
-wait 0
-goto @Noname_3
-
-:Noname_4
 wait 120000
-
-:Noname_5
 goto @Noname_1
